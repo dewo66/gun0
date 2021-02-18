@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+#navbar {
+    background-color: #4B0082;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.75rem;
+    height: 70px;
+
+}
+#navbar ul {
+    
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+#navbar ul li a{
+    padding: 0.75rem;
+}
+
+#navbar ul li a:hover{
+    background: #336ea2;
+    border-radius: 11px;
+}
+/* Home*/
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: 1px solid grey;
+}
+#home img {
+    max-width: 20%;
+    height: auto;
+    border-radius: 70%;
+}
+
+
+
+/* Contact */
+#contact {
+    color: #fff;
+    padding: 1rem;
+}
+#contact .contact-form{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Popup */
+ .popy {
+     padding: 10rem;
+     margin: 0rem;
+     font-family: sans-serif;
+     background: #000;
+     opacity: 0.95;
+     position: absolute;
+     text-align: center;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 100%;
+     z-index: 1;
+}
+.popy-out {
+opacity: 0;
+z-index: -1;
+position: fixed;
+}
+.popy span {
+    color: white;
+    text-transform: uppercase;
+    display: block;
+}
+.popy:active {
+    opacity: 0.1;
+}
+.text1{
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    background: black;
+    position: relative;
+    animation: text 3s 1;
+}
+.text2{
+    font-size: 30px;
+    color: yellowgreen;
+}
+@keyframes text {
+    0%{
+        color: black;
+        margin-bottom: 40px;
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+    100% {
+        padding-bottom: -40px;
+    }
+    }
+
+
+    /* HOBY*/
+    .hoby {
+        flex-direction: column;
+        display: flex;
+     padding: 1rem;
+    }
+    
+    .hoby-image{
+        position: relative;
+        margin-left: 2rem;
+        margin-top: 2rem;
+        border-radius: 8px;
+    }
+    .hoby-image:hover{
+        opacity: 0.7;
+    }
+    
+    
+    .hobys .hoby-image span{
+        background: purple;
+        padding: 0.25rem;
+        color: #fff;
+        border-radius: 4px;
+        position: relative;
+        top: -5rem;
+        left: -12.7rem;
+    }
+
+    .pary {
+        letter-spacing: 1.2px;
+        font-weight: 700;
+        margin-bottom: 0.25rem;
+        
+    }

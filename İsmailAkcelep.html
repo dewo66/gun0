@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İsmail Akcelep</title>
+    <meta name="keywords" content="Python,Java,JavaScript">
+    <meta name="description" content="İsmail Akcelep / İlk Web Sayfam" />
+    <!-- PC -->
+    <link rel="stylesheet" href="Css/global.css">
+    <link rel="stylesheet" href="Css/main.css">
+    <!-- Tablet-->
+    <link rel="stylesheet" media="(max-width:768px" href="Css/tablet.css" />
+    <link rel="stylesheet" media="(max-width:500px" href="Css/mobil.css" />
+</head>
+
+<body>
+    <div class="popy" id="popy">
+        <span class="text1">Hoş Geldiniz</span>
+        <span class="text2">İsmail Akcelep</span>
+    </div>
+    <header class="bg-dark-purple">
+        <div class="container">
+            <nav id="navbar">
+                <h1 class="headinf-small">İsmail Akcelep</h1>
+                <ul>
+                    <li><a href="#home">Ana Sayfa</a></li>
+                    <li><a href="#contact">İletişim veya Merhaba :)</a></li>
+                    <li><a href="#hoby">Hobilerim</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id=home>
+        <img src="C:\Users\dewo9\OneDrive\Masaüstü\Gunler\Profil.jpg">
+
+        <div class="name">
+            <h2 class="heading-big">İsmail Akcelep</h2>
+        </div>
+    </section>
+    <section id="hoby" class="">
+        <h3 class="text-center heading-medium">Hobilerim</h3>
+        <div class="container">
+            <div class="hobys">
+                <!-- Hoby 1-->
+                <div class="hoby1">
+                    <div class="hoby-image text-center">
+                        <img src="C:\Users\dewo9\OneDrive\Masaüstü\Gunler\profilSayfam\oyun.jpg" width="200rem"
+                            height="120rem" />
+                        <span>Oyun</span>
+                    </div>
+                    <div class="hoby-info text-center">
+                        <p class="pary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam magnam veniam soluta
+                            dolorem accusantium blanditiis consequuntur inventore, vel autem, excepturi ad? Placeat
+                            omnis voluptate nemo reprehenderit, cum exercitationem explicabo nisi?</p>
+                    </div>
+                </div>
+                <!-- Hoby 2-->
+                <div class="hoby2">
+                    <div class="hoby-image text-center">
+                        <img src="C:\Users\dewo9\OneDrive\Masaüstü\Gunler\profilSayfam\anime.png" width="200rem"
+                            height="120rem" />
+                        <span>Anime</span>
+                    </div>
+                    <div class="hoby-info">
+                        <p class="pary" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, maxime voluptatum minima
+                            expedita tenetur veritatis, totam, iure voluptas vel magni ullam cum neque! Vel architecto,
+                            blanditiis eius officiis voluptate optio.
+                        </p>
+                    </div>
+                </div>
+                <!-- Hoby 3-->
+                <div class="hoby3">
+                    <div class="hoby-image text-center">
+                        <img src="C:\Users\dewo9\OneDrive\Masaüstü\Gunler\profilSayfam\spor.jpg" width="200rem"
+                            height="120rem" />
+                        <span>Spor</span>
+                    </div>
+                    <div class="hoby-info">
+                        <p class="pary" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias excepturi libero omnis
+                            aspernatur, ullam maiores vel nulla laboriosam fugiat nobis. Veniam, error odit! Blanditiis
+                            aperiam, animi laborum labore maxime rem?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer id="contact" class="bg-dark-blue">
+
+        <div class="contact-form">
+            <form>
+                <h4 class="text-center heading-medium">Selamlar</h4>
+                <div class="form-group">
+                    <label for="name">İsim</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="İsim" />
+                </div>
+                <div class="form-grup">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" name="email" id="email" placeholder="E-mail" />
+                </div>
+                <div class="form-grup">
+                    <label for="message">Mesaj</label>
+                    <textarea name="message" id="message" class="form-control" rows="" placeholder="Mesajınız...">
+                </textarea>
+
+                </div>
+                <button type="submit" class="btn btn-block">Gönder</button>
+
+            </form>
+
+        </div>
+
+    </footer>
+
+</body>
+<script>
+    /* POP UP IN KAPATILMASINI VE SÜRESİNİ BELİRLER */
+    var popy = document.getElementById("popy");
+    var popyTimeOut;
+    popy.onclick = function () {
+        var statusDiv = popy;
+        var status = statusDiv.className;
+        if (status == "popy") {
+            statusDiv.className = "popy-out";
+        }
+
+
+    };
+    setTimeout(() => {
+        console.log(popy.className = "popy-out", popy.className)
+    }, 4000)
+
+    /* HOBİLERE TIKLADIĞIMIZDA YAZILARI GÖRÜNÜR YAPAR*/
+    var pary =document.getElementById(pary)
+    hoby.onclick = function () {
+        var p = pary;
+        var status = p.className;
+        if (status == "pary") {
+            p.className = "pary-out";
+        }
+
+
+    };
+</script>
